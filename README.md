@@ -5,10 +5,11 @@
 
 - bin
 
+[https://github.com/xuqingfeng/hood/releases](https://github.com/xuqingfeng/hood/releases)
 
 - via brew
 
-TODO
+todo
 
 ###Usage
 
