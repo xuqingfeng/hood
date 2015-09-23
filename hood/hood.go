@@ -26,7 +26,7 @@ type Config struct {
 var config Config
 func init() {
 
-	defaultConfig, _ := ioutil.ReadFile("./hood.json")
+	defaultConfig, _ := Asset("../config/hood.json")
 	json.Unmarshal(defaultConfig, &config)
 
 	// user
@@ -72,12 +72,12 @@ func GenerateTemplate(t string, name string) (ok bool) {
 	}
 	switch t {
 	case "php":
-		content, _ := ioutil.ReadFile("./templates/.php.tpl")
+		content, _ := Asset("../templates/.php.tpl")
 		tpl, _ := templ.Parse(string(content))
 		f, _ := os.Create(name + config.PhpExtension)
 		tpl.Execute(f, meta)
 	case "ignore":
-		content, _ := ioutil.ReadFile("./templates/.gitignore.tpl")
+		content, _ := Asset("../templates/.gitignore.tpl")
 		tpl, _ := templ.Parse(string(content))
 		type Ignore struct {
 			IgnoredList []string
@@ -88,7 +88,7 @@ func GenerateTemplate(t string, name string) (ok bool) {
 		f, _ := os.Create(""+config.GitIgnoreExtension)
 		tpl.Execute(f, ignore)
 	case "go":
-		content, _ := ioutil.ReadFile("./templates/.go.tpl")
+		content, _ := Asset("../templates/.go.tpl")
 		tpl, _ := templ.Parse(string(content))
 		type Go struct {
 			Package string
@@ -99,27 +99,27 @@ func GenerateTemplate(t string, name string) (ok bool) {
 		f, _ := os.Create(name + config.GoExtension)
 		tpl.Execute(f, golang)
 	case "js":
-		content, _ := ioutil.ReadFile("./templates/.js.tpl")
+		content, _ := Asset("../templates/.js.tpl")
 		tpl, _ := templ.Parse(string(content))
 		f, _ := os.Create(name + config.JsExtension)
 		tpl.Execute(f, meta)
 	case "css":
-		content, _ := ioutil.ReadFile("./templates/.css.tpl")
+		content, _ := Asset("../templates/.css.tpl")
 		tpl, _ := templ.Parse(string(content))
 		f, _ := os.Create(name + config.CssExtension)
 		tpl.Execute(f, meta)
 	case "java":
-		content, _ := ioutil.ReadFile("./templates/.java.tpl")
+		content, _ := Asset("../templates/.java.tpl")
 		tpl, _ := templ.Parse(string(content))
 		f, _ := os.Create(name + config.JavaExtension)
 		tpl.Execute(f, meta)
 	case "python":
-		content, _ := ioutil.ReadFile("./templates/.py.tpl")
+		content, _ := Asset("../templates/.py.tpl")
 		tpl, _ := templ.Parse(string(content))
 		f, _ := os.Create(name + config.PythonExtension)
 		tpl.Execute(f, meta)
 	case "html":
-		content, _ := ioutil.ReadFile("./templates/.html.tpl")
+		content, _ := Asset("../templates/.html.tpl")
 		tpl, _ := templ.Parse(string(content))
 		type Html struct {
 			Title string
