@@ -7,10 +7,6 @@
 
 [https://github.com/xuqingfeng/hood/releases](https://github.com/xuqingfeng/hood/releases)
 
-- via brew
-
-todo
-
 ###Usage
 
 `hood -t [go, php, js, ignore...] -n [name]`

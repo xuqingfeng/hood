@@ -7,6 +7,7 @@
   "JAVA_EXTENSION": ".java",
   "PYTHON_EXTENSION": ".py",
   "HTML_EXTENSION": ".html",
+  "C_EXTENSION": ".c",
   "GIT_IGNORED_LIST": [
     ".DS_Store",
     "idea"

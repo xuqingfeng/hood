@@ -18,6 +18,7 @@ type Config struct {
 	JavaExtension      string `json:"JAVA_EXTENSION"`
 	PythonExtension    string `json:"PYTHON_EXTENSION"`
 	HtmlExtension      string `json:"HTML_EXTENSION"`
+	CExtension         string `json:"C_EXTENSION"`
 	GitIgnoredList     []string `json:"GIT_IGNORED_LIST"`
 	User               string `json:"USER"`
 	Date               string `json:"DATE"`
@@ -129,6 +130,11 @@ func GenerateTemplate(t string, name string) (ok bool) {
 		}
 		f, _ := os.Create(name + config.HtmlExtension)
 		tpl.Execute(f, html)
+	case "c":
+		content, _ := Asset("../templates/.c.tpl")
+		tpl, _ := templ.Parse(string(content))
+		f, _ := os.Create(name + config.CExtension)
+		tpl.Execute(f, meta)
 	default :
 		ok = false
 	}
