@@ -1,36 +1,37 @@
 package main
+
 import (
-	"flag"
-	"fmt"
-	"os"
-	"github.com/xuqingfeng/hood/hood"
+    "flag"
+    "fmt"
+    "os"
+    "github.com/xuqingfeng/hood/hood"
 )
 
 func main() {
 
-	var (
-		t *string = flag.String(
-			"t",
-			"",
-			"template file type",
-		)
-		name *string = flag.String(
-			"n",
-			"hood",
-			"file name",
-		)
-	)
+    var (
+        t *string = flag.String(
+            "t",
+            "",
+            "file template type",
+        )
+        name *string = flag.String(
+            "n",
+            "hood",
+            "file name",
+        )
+    )
 
-	flag.Parse()
+    flag.Parse()
 
-	if len(*t) == 0 {
-		fmt.Println("-t is required.")
-		os.Exit(1)
-	}
+    if len(*t) == 0 {
+        fmt.Println("-t Is Required.")
+        os.Exit(1)
+    }
 
-	ok := hood.GenerateTemplate(*t, *name)
-	if !ok {
-		fmt.Println("something is wrong :(")
-	}
+    ok := hood.GenerateTemplate(*t, *name)
+    if !ok {
+        fmt.Println("Something Is Wrong :(")
+    }
 
 }

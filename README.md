@@ -16,6 +16,7 @@
 `touch` `.hood.json` in your home directory
 
 `~/.hood.json`
+
 ```json
 {
   "GIT_IGNORED_LIST": [
@@ -24,7 +25,6 @@
   ],
   "USER": "CUSTOM USER NAME"
 }
-
 ```
 
 ###Demo
@@ -32,6 +32,7 @@
 `hood -t php -n demo`
 
 `demo.php`
+
 ```php
 <?php
 /**
