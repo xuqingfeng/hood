@@ -1,17 +1,17 @@
-##hood
->creating template file never be so easy. :kissing:
+## hood
+>creating template files never be so easy. :kissing:
 
-###Install
+### Install
 
 - bin
 
 [https://github.com/xuqingfeng/hood/releases](https://github.com/xuqingfeng/hood/releases)
 
-###Usage
+### Usage
 
 `hood -t [go, php, js, ignore...] -n [name]`
 
-###Custom Config
+### Custom Config
 
 `touch` `.hood.json` in your home directory
 
@@ -27,7 +27,7 @@
 }
 ```
 
-###Demo
+### Demo
 
 `hood -t php -n demo`
 
@@ -40,8 +40,4 @@
  * Date 2015/9/22
  */
 ```
-
-###License
-
-MIT
 

@@ -1,0 +1,2 @@
+---
+- include: deploy/{{ component | default('abort') }}.yml
