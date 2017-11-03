@@ -1,5 +1,5 @@
-## hood
->creating template files never be so easy. :kissing:
+# hood
+>creating template files never be so easy :kissing:
 
 ### Install
 
