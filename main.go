@@ -13,25 +13,25 @@ func main() {
 		t *string = flag.String(
 			"t",
 			"",
-			"file template type",
+			"template type(ansible, c, go, html, ignore, java, js, php, python)",
 		)
 		name *string = flag.String(
 			"n",
 			"hood",
-			"file name",
+			"name",
 		)
 	)
 
 	flag.Parse()
 
 	if len(*t) == 0 {
-		fmt.Println("-t Is Required.")
+		fmt.Println("E! type must be speficied")
 		os.Exit(1)
 	}
 
 	ok := hood.GenerateTemplate(*t, *name)
 	if !ok {
-		fmt.Println("Something Is Wrong :(")
+		fmt.Println("E! something is wrong")
 	}
 
 }

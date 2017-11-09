@@ -1,15 +1,9 @@
 # hood
 >creating template files never be so easy :kissing:
 
-### Install
-
-- bin
-
-[https://github.com/xuqingfeng/hood/releases](https://github.com/xuqingfeng/hood/releases)
-
 ### Usage
 
-`hood -t [go, php, js, ignore...] -n [name]`
+`hood -t [ansible, c, css, go, html, ignore, java, js, php, python] -n [name]`
 
 ### Custom Config
 
@@ -31,9 +25,8 @@
 
 `hood -t php -n demo`
 
-`demo.php`
-
 ```php
+// demo.php
 <?php
 /**
  * Author jsxqf
