@@ -146,8 +146,8 @@ func GenerateTemplate(t string, name string) (ok bool) {
 	case "ansible":
 		/*
 				  - cfg
-				  - inventory
-			      - files,templates,roles
+				  - inventory,requirements.yml
+			      - files,templates,roles,group_vars,host_vars
 				  - setup,build,deploy
 				  - setup.yml,build.yml,deploy.yml
 		*/
@@ -158,11 +158,15 @@ func GenerateTemplate(t string, name string) (ok bool) {
 
 		// inventory
 		os.Create("inventory")
+		// requirements.yml
+		os.Create("requirements.yml")
 
-		// files,templates,roles
+		// files,templates,roles,group_vars,host_vars
 		os.MkdirAll("./files", dirMode)
 		os.MkdirAll("./templates", dirMode)
 		os.MkdirAll("./roles", dirMode)
+		os.MkdirAll("./group_vars/all", dirMode)
+		os.MkdirAll("./host_vars", dirMode)
 
 		// setup,build,deploy
 		os.MkdirAll("./setup", dirMode)
