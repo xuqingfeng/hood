@@ -198,6 +198,14 @@ func GenerateTemplate(t string, name string) (ok bool) {
 		deployFile, _ := os.Create("deploy.yml")
 		deployFile.Write(deployContent)
 
+		abortContent, _ := Asset("../templates/ansible/abort.yml")
+		setupAbortFile, _ := os.Create("./setup/abort.yml")
+		setupAbortFile.Write(abortContent)
+		buildAbortFile, _ := os.Create("./build/abort.yml")
+		buildAbortFile.Write(abortContent)
+		deployAbortFile, _ := os.Create("./deploy/abort.yml")
+		deployAbortFile.Write(abortContent)
+
 		defer func() {
 			setupFile.Close()
 			buildFile.Close()

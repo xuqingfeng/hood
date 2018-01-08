@@ -17,7 +17,7 @@
 // ../config/hood.json
 // DO NOT EDIT!
 
-package hood
+package main
 
 import (
 	"bytes"
@@ -262,7 +262,7 @@ func TemplatesPyTpl() (*asset, error) {
 	return a, nil
 }
 
-var _TemplatesAnsibleAbortYml = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x74\x8f\xb1\x0e\x83\x30\x0c\x44\xf7\x7c\xc5\x6d\x4c\xf9\x81\x48\x1d\x2a\xf5\x27\xba\x11\xc0\x40\xd4\x60\x23\x6c\xda\xdf\x6f\xa8\x10\x15\x95\xba\x5d\x2e\x67\xbf\xb3\xf7\xde\x79\x8c\xa2\xa6\x01\x59\xda\x98\x37\xed\x80\x56\x98\xa9\xb5\x24\xbc\xfb\xc5\xb3\xa8\x0f\x0d\x45\x00\x1e\x1c\x27\x0a\xb8\x51\x9f\x98\x60\x23\x95\x89\x69\x16\x26\x36\x98\x40\xc9\xd6\xf9\x93\x04\x3a\x6a\xd6\x21\xec\x0f\x60\xd2\x21\xe0\x2e\x2b\x98\xa8\xdb\xb3\x7f\x16\xe0\x95\x6c\x44\xed\x09\xd5\xf1\x79\x39\x54\x55\xbb\x53\x97\x6b\x23\x8b\x25\x1e\x4e\xf0\x3e\xa6\xfc\xc3\xfe\x72\x9e\x71\x49\xb1\xc9\x84\xa4\x60\xb1\xd2\x74\xbb\xa6\x73\xef\x00\x00\x00\xff\xff\x88\xf3\x97\x38\x16\x01\x00\x00")
+var _TemplatesAnsibleAbortYml = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x6c\x4f\x41\x8e\x83\x40\x0c\xbb\xcf\x2b\x7c\xe3\x34\x1f\x18\x69\x0f\x2b\xed\x27\xf6\xc6\x00\x01\xa2\x0e\x49\x45\x42\xfb\xfd\x0e\x15\xa2\x6a\xd5\x9b\xe3\xd8\xb1\x13\x63\x0c\x11\xb3\x9a\x5b\x42\xd1\x3e\x97\x1d\x07\xa0\x57\x11\xea\x9d\x55\x0e\xbe\x72\x9e\xed\x62\xa9\x02\x20\x42\xf2\x42\x09\x7f\x34\xb2\x10\x7c\xa6\xea\x58\xae\x2a\x24\x0e\x57\xac\x9b\x3c\x75\xc0\x40\xdd\x36\xa5\x63\x00\x16\x9b\x12\xfe\x75\x83\x10\x0d\xbb\xd2\xc8\xbf\xda\x71\x67\x9f\xd1\x46\x42\x73\xae\x7e\x4e\xd4\xb4\xe1\xad\xc7\x6f\xa7\xab\xb3\x4c\x47\xce\x98\xb9\x7c\x64\xbe\xee\xdf\xf2\xca\xb9\x2b\x04\x36\x88\x7a\x6d\xb8\xff\x30\x84\x47\x00\x00\x00\xff\xff\xa6\x56\x6c\x45\x0c\x01\x00\x00")
 
 func TemplatesAnsibleAbortYmlBytes() ([]byte, error) {
 	return bindataRead(
@@ -277,7 +277,7 @@ func TemplatesAnsibleAbortYml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "../templates/ansible/abort.yml", size: 278, mode: os.FileMode(420), modTime: time.Unix(1509694808, 0)}
+	info := bindataFileInfo{name: "../templates/ansible/abort.yml", size: 268, mode: os.FileMode(420), modTime: time.Unix(1515393500, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -434,21 +434,21 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"../templates/.c.tpl":              TemplatesCTpl,
-	"../templates/.css.tpl":            TemplatesCssTpl,
-	"../templates/.gitignore.tpl":      TemplatesGitignoreTpl,
-	"../templates/.go.tpl":             TemplatesGoTpl,
-	"../templates/.html.tpl":           TemplatesHtmlTpl,
-	"../templates/.java.tpl":           TemplatesJavaTpl,
-	"../templates/.js.tpl":             TemplatesJsTpl,
-	"../templates/.php.tpl":            TemplatesPhpTpl,
-	"../templates/.py.tpl":             TemplatesPyTpl,
-	"../templates/ansible/abort.yml":   TemplatesAnsibleAbortYml,
+	"../templates/.c.tpl": TemplatesCTpl,
+	"../templates/.css.tpl": TemplatesCssTpl,
+	"../templates/.gitignore.tpl": TemplatesGitignoreTpl,
+	"../templates/.go.tpl": TemplatesGoTpl,
+	"../templates/.html.tpl": TemplatesHtmlTpl,
+	"../templates/.java.tpl": TemplatesJavaTpl,
+	"../templates/.js.tpl": TemplatesJsTpl,
+	"../templates/.php.tpl": TemplatesPhpTpl,
+	"../templates/.py.tpl": TemplatesPyTpl,
+	"../templates/ansible/abort.yml": TemplatesAnsibleAbortYml,
 	"../templates/ansible/ansible.cfg": TemplatesAnsibleAnsibleCfg,
-	"../templates/ansible/build.yml":   TemplatesAnsibleBuildYml,
-	"../templates/ansible/deploy.yml":  TemplatesAnsibleDeployYml,
-	"../templates/ansible/setup.yml":   TemplatesAnsibleSetupYml,
-	"../config/hood.json":              ConfigHoodJson,
+	"../templates/ansible/build.yml": TemplatesAnsibleBuildYml,
+	"../templates/ansible/deploy.yml": TemplatesAnsibleDeployYml,
+	"../templates/ansible/setup.yml": TemplatesAnsibleSetupYml,
+	"../config/hood.json": ConfigHoodJson,
 }
 
 // AssetDir returns the file names below a certain
@@ -490,28 +490,27 @@ type bintree struct {
 	Func     func() (*asset, error)
 	Children map[string]*bintree
 }
-
 var _bintree = &bintree{nil, map[string]*bintree{
 	"..": &bintree{nil, map[string]*bintree{
 		"config": &bintree{nil, map[string]*bintree{
 			"hood.json": &bintree{ConfigHoodJson, map[string]*bintree{}},
 		}},
 		"templates": &bintree{nil, map[string]*bintree{
-			".c.tpl":         &bintree{TemplatesCTpl, map[string]*bintree{}},
-			".css.tpl":       &bintree{TemplatesCssTpl, map[string]*bintree{}},
+			".c.tpl": &bintree{TemplatesCTpl, map[string]*bintree{}},
+			".css.tpl": &bintree{TemplatesCssTpl, map[string]*bintree{}},
 			".gitignore.tpl": &bintree{TemplatesGitignoreTpl, map[string]*bintree{}},
-			".go.tpl":        &bintree{TemplatesGoTpl, map[string]*bintree{}},
-			".html.tpl":      &bintree{TemplatesHtmlTpl, map[string]*bintree{}},
-			".java.tpl":      &bintree{TemplatesJavaTpl, map[string]*bintree{}},
-			".js.tpl":        &bintree{TemplatesJsTpl, map[string]*bintree{}},
-			".php.tpl":       &bintree{TemplatesPhpTpl, map[string]*bintree{}},
-			".py.tpl":        &bintree{TemplatesPyTpl, map[string]*bintree{}},
+			".go.tpl": &bintree{TemplatesGoTpl, map[string]*bintree{}},
+			".html.tpl": &bintree{TemplatesHtmlTpl, map[string]*bintree{}},
+			".java.tpl": &bintree{TemplatesJavaTpl, map[string]*bintree{}},
+			".js.tpl": &bintree{TemplatesJsTpl, map[string]*bintree{}},
+			".php.tpl": &bintree{TemplatesPhpTpl, map[string]*bintree{}},
+			".py.tpl": &bintree{TemplatesPyTpl, map[string]*bintree{}},
 			"ansible": &bintree{nil, map[string]*bintree{
-				"abort.yml":   &bintree{TemplatesAnsibleAbortYml, map[string]*bintree{}},
+				"abort.yml": &bintree{TemplatesAnsibleAbortYml, map[string]*bintree{}},
 				"ansible.cfg": &bintree{TemplatesAnsibleAnsibleCfg, map[string]*bintree{}},
-				"build.yml":   &bintree{TemplatesAnsibleBuildYml, map[string]*bintree{}},
-				"deploy.yml":  &bintree{TemplatesAnsibleDeployYml, map[string]*bintree{}},
-				"setup.yml":   &bintree{TemplatesAnsibleSetupYml, map[string]*bintree{}},
+				"build.yml": &bintree{TemplatesAnsibleBuildYml, map[string]*bintree{}},
+				"deploy.yml": &bintree{TemplatesAnsibleDeployYml, map[string]*bintree{}},
+				"setup.yml": &bintree{TemplatesAnsibleSetupYml, map[string]*bintree{}},
 			}},
 		}},
 	}},
@@ -563,3 +562,4 @@ func _filePath(dir, name string) string {
 	cannonicalName := strings.Replace(name, "\\", "/", -1)
 	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
+
