@@ -17,7 +17,7 @@
 // ../config/hood.json
 // DO NOT EDIT!
 
-package main
+package hood
 
 import (
 	"bytes"
