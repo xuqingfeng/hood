@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/xuqingfeng/hood/hood"
 	"os"
+
+	"github.com/xuqingfeng/hood/hood"
 )
 
 func main() {
